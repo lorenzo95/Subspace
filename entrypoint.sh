@@ -27,7 +27,7 @@ if [ -z "${SUBSPACE_HTTP_INSECURE-}" ] ; then
     export SUBSPACE_HTTP_INSECURE="false"
 fi
 
-export NAMESERVER="1.1.1.1"
+#export NAMESERVER="1.1.1.1"
 export DEBIAN_FRONTEND="noninteractive"
 
 # Set DNS server
@@ -134,6 +134,10 @@ if ! test -d /etc/sv/dnsmasq ; then
 
     # Never forward addresses in the non-routed address spaces.
     bogus-priv
+
+    # Force use-application-dns.net to NXDOMAIN in order to disable Firefox's DNS
+    # over HTTPS
+    address=/use-application-dns.net/
 DNSMASQ
 
     mkdir /etc/sv/dnsmasq
