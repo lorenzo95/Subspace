@@ -57,7 +57,7 @@ docker run -d \
     --cap-add NET_ADMIN \   
     --volume /usr/bin/wg:/usr/bin/wg \   
     --volume /data:/data \   
-    --env SUBSPACE_HTTP_HOST=75.155.76.169 \   
+    --env SUBSPACE_HTTP_HOST=IP/url of wireguard host in the config \   
     --env SUBSPACE_LETSENCRYPT=false \   
     --env SUBSPACE_HTTP_INSECURE=true \   
     --env NAMESERVER="9.9.9.9" \   
