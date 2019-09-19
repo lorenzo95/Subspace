@@ -2,7 +2,7 @@
 
    
    
-Runs on Raspberry Pi   
+Runs on Raspberry Pi - Do NOT expose this to the internet without reverse proxy, etc!   
    
 ## Remove the local DNS resolver. Dnsmasq will run inside the container   
 systemctl disable systemd-resolved && reboot   
