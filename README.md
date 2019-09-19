@@ -4,21 +4,22 @@
    
 Runs on Raspberry Pi - Do NOT expose this to the internet without reverse proxy, etc!   
    
-## Remove the local DNS resolver. Dnsmasq will run inside the container   
+Remove the local DNS resolver. Dnsmasq will run inside the container   
 systemctl disable systemd-resolved && reboot   
    
-## Set DNS server.   
+Set DNS server.   
 echo nameserver 1.1.1.1 >/etc/resolv.conf
    
-## Load modules.   
+Load modules.   
 modprobe wireguard   
 modprobe iptable_nat   
 modprobe ip6table_nat   
    
-## Enable IP forwarding   
+Enable IP forwarding   
 sysctl -w net.ipv4.ip_forward=1   
 sysctl -w net.ipv6.conf.all.forwarding=1   
    
+## Run with docker   
 mkdir /data   
 docker run -d \   
     --name subspace \   
