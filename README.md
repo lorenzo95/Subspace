@@ -1,36 +1,6 @@
-# Subspace - A simple WireGuard VPN server GUI
+# Subspace - NOT THE OFFICIAL REPOSITORY !!!
 
-![Screenshot](https://raw.githubusercontent.com/subspacecloud/subspace/master/screenshot1.png?cachebust=8923409243)
 
-## Screenshots
-
-[Screenshot 1](https://raw.githubusercontent.com/subspacecloud/subspace/master/screenshot1.png)
-
-[Screenshot 2](https://raw.githubusercontent.com/subspacecloud/subspace/master/screenshot2.png)
-
-[Screenshot 3](https://raw.githubusercontent.com/subspacecloud/subspace/master/screenshot3.png)
-
-[Screenshot 4](https://raw.githubusercontent.com/subspacecloud/subspace/master/screenshot4.png)
-
-## Features
-
-* **WireGuard VPN Protocol**
-  * The most modern and fastest VPN protocol.
-* **Single Sign-On (SSO) with SAML**
-  * Support for SAML providers like G Suite and Okta.
-* **Add Devices**
-  * Connect from Mac OS X, Windows, Linux, Android, or iOS.
-* **Remove Devices**
-  * Removes client key and disconnects client.
-* **Auto-generated Configs**
-  * Each client gets a unique downloadable config file.
-  * Generates a QR code for easy importing on iOS and Android.
-
-## Run Subspace on Portal Cloud
-
-Portal Cloud is a hosting service that enables anyone to run open source cloud applications.
-
-[Sign up for Portal Cloud](https://portal.cloud/) and get $15 free credit with code **Portal15**.
 
 # Run on Raspberry Pi   
    
