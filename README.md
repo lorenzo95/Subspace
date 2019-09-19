@@ -1,8 +1,8 @@
 # Subspace - NOT THE OFFICIAL REPOSITORY !!!
 
-
-
-# Run on Raspberry Pi   
+   
+   
+Runs on Raspberry Pi   
    
 ## Remove the local DNS resolver. Dnsmasq will run inside the container   
 systemctl disable systemd-resolved && reboot   
