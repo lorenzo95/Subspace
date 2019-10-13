@@ -1,0 +1,2 @@
+modprobe ip6table_filter
+echo 'ip6table_filter' >> /etc/modules
